@@ -28,6 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+ <script src="assets/js/lottie.min.js"></script>
 
   
 </head>
@@ -56,7 +57,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">COVIDENMENT</a></h1>
+      <h1 class="logo me-auto"><a href="#">COVIDEMENT</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -95,7 +96,20 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  
+    <section id="hero" class="d-flex align-items-center">
+         <span id="gif1"></span>
+
+        <script>
+                var gif1 = bodymovin.loadAnimation({
+                container: document.getElementById('gif1'), // required
+                path: 'img/gif1.json', // required
+                renderer: 'svg', // required
+                loop: true, // optional
+                autoplay: true, // optional
+              });
+              
+         </script>
     <div class="container">
       <h1>Welcome to Medilab</h1>
       <h2>We are team of talanted designers making websites with Bootstrap</h2>
@@ -107,7 +121,8 @@
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
-      <div class="container">
+     
+        <div class="container">
 
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
@@ -934,6 +949,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+   
 
 </body>
 
